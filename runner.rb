@@ -7,10 +7,10 @@ if ARGV.any?
 
   new_list = TodoList.new
   new_list.load_list("todo_list_data.csv")
-
+  # binding.pry
   case ARGV[0]
   when "display"
-    new_list.display_all
+    new_list.display_all_with_numbers
   when "sort"
     new_list.display_all_sorted
   when "add"
@@ -20,7 +20,7 @@ if ARGV.any?
   when "done"
     new_list.mark_complete(ARGV[1].to_i)
   when "print"
-    File.write("text_file.txt", "#{new_list.display_all}")
+    File.write("text_file.txt", "#{new_list.display_all_with_numbers}")
   else
     puts "I don't understand that command. \nPlease try again."
   end
