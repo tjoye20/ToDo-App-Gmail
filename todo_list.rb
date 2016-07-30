@@ -22,7 +22,7 @@ class TodoList
       item_string = "#{item.description} \n"
       string += item_string
     end
-    #will return this string, so we can write it to a file
+    #return this string, so we can write it to a file
     string
   end
 
@@ -58,7 +58,7 @@ class TodoList
   def mark_complete(num)
     @list[num - 1].description = "#{@list[num - 1].description} [DONE]"
     File.write("todo_list_data.csv", "description \n#{self.display_all}")
-    self.display_all
+    self.display_all_with_numbers
   end
 
   def display_all_sorted
