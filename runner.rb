@@ -1,4 +1,3 @@
-require "csv"
 require "pry"
 require_relative "list_item"
 require_relative "todo_list"
@@ -7,7 +6,7 @@ if ARGV.any?
 
   new_list = TodoList.new
   new_list.load_list("todo_list_data.csv")
-  # binding.pry
+
   case ARGV[0]
   when "display"
     new_list.display_all_with_numbers
