@@ -1,12 +1,11 @@
 1. Walk the cat. 
 2. Go to the gym. 
 3. Buy groceries for the week. 
-4. Call Penelope. 
-5. Finish code challenge. 
-6. Book hotel for vacation. 
-7. Pay cable bill. 
-8. Call insurance company. 
-9. Read Ruby Under a Microscope. 
-10. Book eye appointment for new glasses. 
-11. Learn how to pick locks. 
-12. Find good recipe for dinner party. 
+4. Finish code challenge. 
+5. Book hotel for vacation. 
+6. Pay cable bill. 
+7. Call insurance company. 
+8. Read Ruby Under a Microscope. 
+9. Book eye appointment for new glasses. 
+10. Learn how to pick locks. 
+11. Find good recipe for dinner party. 
