@@ -1,3 +1,3 @@
 #Command-line To-Do List App
 
-Built this app as an opportunity to learn how to read/write to CSV files, and also learn to convert from CSV to a TXT file.
+To-Do List app that runs on the command line. Parses CSV files into Ruby objects in order to manipulate them. 
