@@ -8,7 +8,7 @@ Used this project to solidify parsing CSV files and manipulating them as Ruby ob
 
 ### Quickstart
 
-```` bundle install ```` to download the gems used to build this program. Make sure your Ruby version is 2.2.5
+After cloning the repository onto your local machine,```` bundle install ```` to download the gems used to build the program. Make sure your Ruby version is 2.2.5
 
 Running the ```` runner.rb ```` file launches the program.
 
