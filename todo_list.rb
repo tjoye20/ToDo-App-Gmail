@@ -1,6 +1,3 @@
-require "csv"
-require 'pry'
-
 class TodoList
 
   attr_accessor :list
@@ -22,7 +19,6 @@ class TodoList
       item_string = "#{item.description} \n"
       string += item_string
     end
-    #return this string, so we can write it to a file
     string
   end
 
@@ -72,4 +68,23 @@ class TodoList
     end
   end
 
+
+  def email_list
+    puts "What's your Gmail username?"
+    username = STDIN.gets.chomp
+    puts "What's your Gmail password?"
+    password = STDIN.gets.chomp
+    puts "What email address do you want to send this list to?"
+    email_address = STDIN.gets.chomp
+    list_items = self.display_all_with_numbers
+
+    gmail = Gmail.connect(username, password)
+    gmail.deliver do
+      to email_address
+      subject "ToDo List"
+      text_part do
+        body list_items
+      end
+    end
+  end
 end
